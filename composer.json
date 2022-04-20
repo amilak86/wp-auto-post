@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ak86\\WpAutoPost\\": "src/"
+            "Ak86\\": "src/"
         }
     }
 }
