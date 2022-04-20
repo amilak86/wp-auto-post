@@ -64,7 +64,7 @@ class WPAutoPost
      * @param [array] $post - an array of data to be inserted as a wordpress post
      * @return [object] - Response received from the WP REST API upon creating a new post
      */
-    function add_wp_post($post, $imgid)
+    public function add_wp_post($post, $imgid)
     {
         // return false if we haven't got an array
         if(!is_array($post))
@@ -76,7 +76,7 @@ class WPAutoPost
 
         //$guzzle = new GuzzleHttp\Client();
 
-        $wpreq = $this->gz->request('POST', $this->wp_post_endpoint, [
+        $wpreq = $this->gc->request('POST', $this->wp_post_endpoint, [
             'headers' => [
                 'Authorization' => 'Basic '.$this->get_wp_auth(),
                 //'Content-Type' => '',
