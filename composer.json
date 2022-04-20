@@ -1,0 +1,22 @@
+{
+    "name": "ak86/wp-auto-post",
+    "description": "A PHP script to automate posting to a Wordpress site",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Amila K.",
+            "email": "28174846+amilak86@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "monolog/monolog": "^2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ak86\\WpAutoPost\\": "src/"
+        }
+    }
+}
