@@ -51,7 +51,7 @@ class WPAutoPost
             'headers' => [
                 'Authorization' => 'Basic '.$this->get_wp_auth(),
                 'Content-Type' => $imgres->getHeader('Content-Type')[0],
-                'Content-Disposition' => 'form-data; filename="'.basename($imagePath).'"'
+                'Content-Disposition' => 'attachment; filename="'.basename($imagePath).'"'
             ],
             'body' => $imgres->getBody()
         ]);	
